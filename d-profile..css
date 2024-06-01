@@ -1,0 +1,129 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header styling */
+.header {
+    background-color: #2b342c; /* Dark green background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Navigation styles */
+.navigation {
+    margin-top: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #3e4d3f; /* Slightly darker green */
+}
+
+/* Cards container */
+.cards-container {
+    display: flex;
+    flex-wrap: nowrap; /* No wrapping, single row */
+    justify-content: flex-start; /* Align cards to the start of the row */
+    gap: 20px;
+    overflow-x: auto; /* Allow horizontal scrolling if cards exceed container width */
+    padding: 20px;
+    width: 100%;
+    flex-direction: row; /* Display cards in a row */
+}
+
+
+/* Profile card styling */
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 400px; /* Increased width for larger cards */
+    text-align: center;
+    padding: 30px; /* Increased padding for larger cards */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 50%;
+    width: 150px; /* Increased size for larger cards */
+    height: 150px; /* Increased size for larger cards */
+    transition: transform 0.3s; /* Smooth transition for image */
+}
+
+.card img:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+.card h2 {
+    margin: 15px 0;
+    font-size: 26px; /* Increased font size for larger cards */
+    color: #333;
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.card h2:hover {
+    color: #4CAF50; /* Change text color on hover */
+}
+
+.card p {
+    color: #666;
+    font-size: 16px; /* Increased font size for larger cards */
+    line-height: 1.8; /* Slightly increased line height */
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.card p:first-of-type {
+    font-weight: bold;
+    color: #4CAF50;
+}
